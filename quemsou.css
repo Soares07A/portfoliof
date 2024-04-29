@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Lulo';
-    src: url(/Lulo.ttf);
+    src: url(Lulo.ttf);
 }
 @font-face {
     font-family: 'Avenir';
-    src: url(/Avenir.otf);
+    src: url(Avenir.otf);
 }
 :root{
     --cor-primaria: #000000;
