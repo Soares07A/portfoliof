@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Lulo';
+    src: url(/Lulo.ttf);
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(/Avenir.otf);
+}
+:root{
+    --cor-primaria: #000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;      
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cab{
+    background-color: var(--cor-secundaria);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cab_mn1{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.cab_mn2{
+    display: flex;
+    gap: 50px;
+}
+.cab_mn3{
+    display: none;
+}
+.cab_img{
+    width: 45%;
+}
+.cab_lk1{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;           
+    font-size: 14px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+     
+}
+.vd_background{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1000;
+}
+.vd_background video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text_servicos{
+    font-family: "Lulo", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-bottom: 7%;
+}
+.text_servicos{
+    font-family: "Lulo", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 7%;
+}
+.servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    gap: 80px;
+}
+.front{
+    border: 7px solid #000;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+.text_front{
+    font-family: "Lulo", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5%;
+    margin-bottom: 15%;
+}
+.botao_front{
+    font-family: "Avenir", sans-serif;
+    font-weight: 600;
+    font-style: normal;           
+    font-size: 17px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    background-color: #41D1CC;
+    padding: 5%;
+}
+.consultoria{
+    border: 7px solid #000;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+.text_consultoria{
+    font-family: "Lulo", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding-top: 29.5px;
+    padding-bottom: 5%;
+    margin-bottom: 15%;
+}
+.botao_consultoria{
+    font-family: "Avenir", sans-serif;
+    font-weight: 600;
+    font-style: normal;           
+    font-size: 17px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    background-color: #41D1CC;
+    padding: 5%;
+}
+.site{
+    border: 7px solid #000;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+.text_site{
+    font-family: "Lulo", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding-top: 29.5px;
+    padding-bottom: 5%;
+    margin-bottom: 15%;
+}
+.botao_site{
+    font-family: "Avenir", sans-serif;
+    font-weight: 600;
+    font-style: normal;           
+    font-size: 17px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    background-color: #41D1CC;
+    padding: 5%;
+}
+.rodape{
+    background-color: #41D1CC;
+    height: 600px;
+}
+.rodape_textos{
+    padding-top: 4%;
+    padding-left: 20%;
+}
+.rodape_text1{
+    font-family: "Lulo", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+.rodape_text2{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 2;
+    padding-bottom: 2%;
+}
+.rodape_text3{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    padding-bottom: 2%;
+}
+.rodape_text4{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+.rodape_text5{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    padding-left: 20%;
+    padding-top: 9%;
+}
+.rodape_imgs{
+    align-items: center;
+    padding-left: 20%;
+    padding-top: 2%
+}
+.img_link{
+    width: 30px;
+    margin-right: 10px;
+}
+.img_whats{
+    width: 50px;
+    position: fixed;
+    bottom: 50px;    
+    right: 100px;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+@media screen and (max-width: 768px) {
+
+    .cab{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-secundaria);
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .cab_mn2{
+        display: flex;
+        gap: 20px;
+    }
+    .servicos {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .cab{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-secundaria);
+        height: 100px;
+        display: flex;
+        padding: 0 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cabmenu{
+        width: 30px;
+        height: 30px;
+        background-image: url("../mídia/menuhamb.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    .cab_mn3{
+        display: block;
+    }
+    .menubtn{
+        display: none;
+    }
+    .lista-menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        text-align: right;
+        gap: 20px;
+        right: 0%;
+        padding: 20px 30px 20px 0;
+        width: 35vw;
+        background-color: var(--cor-secundaria);
+    }
+    .menubtn:checked~.lista-menu {
+        display: flex;
+    }
+    .lista-menu__item {
+        background-color: var(--branco);
+        list-style-type: none;
+    }
+
+    .lista-menu__link {
+        background-color: var(--branco);
+        text-decoration: none;
+        font-family: 'Avenir';
+        color: var(--cor-primaria);
+    }
+
+    .cab_mn2{
+        display: none;
+    }
+    .img_whats{
+        bottom: 20px;    
+        right: 20px;
+    }
+}

@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Lulo';
+    src: url(/Lulo.ttf);
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(/Avenir.otf);
+}
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;      
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cab{
+    background-color: var(--cor-secundaria);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cab_mn1{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.cab_mn2{
+    display: flex;
+    gap: 50px;
+}
+.cab_mn3{
+    display: none;
+}
+.cab_img{
+    width: 45%;
+}
+.cab_lk1{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;           
+    font-size: 14px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+     
+}
+.vd_background{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1000;
+}
+.vd_background video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.div_sbmim{
+    padding-left: 8%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sbmim_textos{
+    background-color: var(--cor-secundaria);
+    width: 80%;
+    flex-direction: row;
+    display: flex
+}
+.sbmim_txt1{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+
+    padding-top: 5%;
+    padding-left: 10%;
+}
+.sbmim_txt2{
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+
+    word-wrap: break-word;
+    text-align: justify;
+
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+.eu_img{
+    width: 50%;
+    height: 50%;
+
+    padding-top: 5%;
+    padding-right: 1%;
+}
+.img_whats{
+    width: 50px;
+    position: fixed;
+    bottom: 50px;    
+    right: 100px;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .sbmim_textos{
+        background-color: var(--cor-secundaria);
+        width: 100%;
+        flex-direction: row;
+        display: flex
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .cab{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-secundaria);
+        height: 100px;
+        display: flex;
+        padding: 0 30px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cab_mn2{
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .cab{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-secundaria);
+        height: 100px;
+        display: flex;
+        padding: 0 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cabmenu{
+        width: 30px;
+        height: 30px;
+        background-image: url("../mídia/menuhamb.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    .cab_mn3{
+        display: block;
+    }
+    .menubtn{
+        display: none;
+    }
+    .lista-menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        text-align: right;
+        gap: 20px;
+        right: 0%;
+        padding: 20px 30px 20px 0;
+        width: 35vw;
+        background-color: var(--cor-secundaria);
+    }
+    .menubtn:checked~.lista-menu {
+        display: flex;
+    }
+    .lista-menu__item {
+        background-color: var(--branco);
+        list-style-type: none;
+    }
+
+    .lista-menu__link {
+        background-color: var(--branco);
+        text-decoration: none;
+        font-family: 'Avenir';
+        color: var(--cor-primaria);
+    }
+
+    .cab_mn2{
+        display: none;
+    }
+    .img_whats{
+        bottom: 20px;    
+        right: 20px;
+    }
+}
