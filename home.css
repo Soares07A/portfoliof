@@ -154,14 +154,14 @@
     padding-left: 15%;
     padding-bottom: 7%;
 }
-#servicos{
+.servicos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 5%;
 }
-#front{
+.front{
     border: 7px solid #000;
     padding: 20px;
     width: 300px;
@@ -188,7 +188,7 @@
     background-color: #57BBBF;
     padding: 5%;
 }
-#consultoria{
+.consultoria{
     border: 7px solid #000;
     padding: 20px;
     width: 300px;
@@ -215,7 +215,7 @@
     background-color: #57BBBF;
     padding: 5%;
 }
-#site{
+.site{
     border: 7px solid #000;
     padding: 20px;
     width: 300px;
@@ -337,7 +337,7 @@
         padding-left: 0%;
         padding-bottom: 7%;
     }
-    #servicos{
+    .servicos{
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -481,7 +481,7 @@
         padding-left: 0%;
         padding-bottom: 7%;
     }
-    #servicos{
+    .servicos{
         display: flex;
         flex-direction: column;
         gap: 20px;
