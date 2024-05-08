@@ -380,9 +380,9 @@
         gap: 20px;
         right: 0%;
         padding: 20px 30px 20px 0;
-        top: 100%;
         width: 35vw;
         background-color: var(--cor-secundaria);
+        z-index: 100;
     }
     .menubtn:checked~.lista-menu {
         display: flex;
